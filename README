@@ -142,3 +142,18 @@ This library has been successfully tested on different platforms with
 32 bits and 64 bits word width, little-endian and big-endian bytes
 ordering.
 
+Installation
+============
+
+sudo apt update
+sudo apt install -y git build-essential autotools-dev autoconf libtool pkg-config
+
+git clone https://github.com/glenvt18/libdvbcsa.git
+cd libdvbcsa
+
+./bootstrap
+./configure --prefix=/usr
+make -j"$(nproc)"
+sudo make install
+sudo ldconfig
+
